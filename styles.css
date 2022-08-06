@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E3C16F; /*Maize Crayola*/
+    font-family: sans-serif;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    font-size: 4.5rem;    
+    position: relative;
+    font-weight: bold;
+    color: #6D213C; /*Old Mauve*/
+    user-select: none;
+}
+
+/*height: calc(100% - 5rem);*/
+.gamespace {
+    margin: 5rem auto 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.options {
+    height: 660px;
+    flex: 1;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #6D213C;
+    user-select: none;
+
+}
+
+.options h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 1rem;
+}
+
+.options .button {
+    all: unset;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 8px;
+    outline: 2px solid #946846;
+}
+
+.options .button:hover {
+    background-color: #BAAB68;
+    cursor: pointer;    
+}
+
+.options .button:active {
+    background-color: #c2b57a;
+    transform: scale(0.99,0.99);
+}
+
+
+.canvas {
+    width: 660px;
+    height: 660px;
+    outline: 5px solid #638475; /*Wintergreen Dream*/
+    background-color: #fffafa; /*Snow White*/
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pixel {
+    user-select: none;
+    /* 
+    min-width: 41.25px; 
+    outline: .1px solid lightgray;
+    */
+}
+
+
+.pixel-hover:hover {
+    background-color: lightgray;
+}
