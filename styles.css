@@ -48,11 +48,12 @@ header {
 .options h2 {
     font-weight: bold;
     text-decoration: underline;
-    margin: 1rem;
+    margin: .5rem;
 }
 
 .options .button {
     all: unset;
+    margin: .5rem;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 5px 8px;
@@ -69,6 +70,22 @@ header {
     transform: scale(0.99,0.99);
 }
 
+.whiteout-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox {
+    background-color: #6D213C;
+    border: 2px solid #6D213C;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.checkbox-active {
+    background-color: white;
+}
 
 .canvas {
     width: 660px;

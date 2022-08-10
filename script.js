@@ -1,5 +1,7 @@
 let CANVAS = document.querySelector('.canvas');
 let RESIZE_BUTTON = document.querySelector('#change-grid');
+let WHITEOUT_BUTTON = document.querySelector('#whiteout-button');
+let WHITEOUT_CHECKBOX = document.querySelector('#whiteout-checkbox');
 let CANVAS_WIDTH = 660;
 let NUM_OF_COLUMNS = 16;
 let MOUSE_DOWN = false;
@@ -64,6 +66,10 @@ const checkGridInput = (newGridInput) => {
     }
 }
 
+const whiteoutMode = () => {
+    WHITEOUT_CHECKBOX.classList.add('checkbox-active');
+}
+
 window.onload = () => {
     changeColumnAmount(16);
 }
@@ -72,3 +78,4 @@ CANVAS.addEventListener('mousedown', toggleMouseButton);
 CANVAS.addEventListener('mouseup', toggleMouseButton);
 document.addEventListener('mouseup', mouseUp);
 RESIZE_BUTTON.addEventListener('mousedown', changeGridPrompt);
+WHITEOUT_BUTTON.addEventListener('mousedown', whiteoutMode); 
