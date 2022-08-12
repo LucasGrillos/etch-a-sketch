@@ -75,16 +75,15 @@ header {
     flex-direction: row;
 }
 
+#whiteout-checkbox {
+    background: black;
+}
+
 .checkbox {
-    background-color: #6D213C;
     border: 2px solid #6D213C;
     height: 10px;
     width: 10px;
     display: inline-block;
-}
-
-.checkbox-active {
-    background-color: white;
 }
 
 .canvas {
@@ -107,5 +106,5 @@ header {
 
 
 .pixel-hover:hover {
-    background-color: lightgray;
+    background-color: lightgray !important;
 }

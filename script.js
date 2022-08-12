@@ -9,13 +9,14 @@ let MOUSE_DOWN = false;
 
 const fillPixelDrag = (event) => {
     if (MOUSE_DOWN) {
-        event.target.style.background = 'black';
-        console.log("Mouse down!");
+        event.target.style.background = WHITEOUT_CHECKBOX.style.background;
     }
 }
 
 const fillPixelClick = (event) => {
-    event.target.style.background = 'black';
+    //event.target.style.background = 'black';
+    event.target.style.background = WHITEOUT_CHECKBOX.style.background;
+    console.log(event.target.classList);
 }
 
 const removeCanvasPixels = () => {
@@ -60,14 +61,13 @@ const checkGridInput = (newGridInput) => {
             alert("INPUT MUST BE BETWEEN 16 AND 21");
         }
         else {
-            console
             changeColumnAmount(newGridNum);
         }
     }
 }
 
 const whiteoutMode = () => {
-    WHITEOUT_CHECKBOX.classList.add('checkbox-active');
+    WHITEOUT_CHECKBOX.style.background = (WHITEOUT_CHECKBOX.style.background == 'black' ? '#fffafa' : 'black'); 
 }
 
 window.onload = () => {
